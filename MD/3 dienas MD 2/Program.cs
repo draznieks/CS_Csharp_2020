@@ -7,39 +7,60 @@ namespace _3_dienas_MD_2
         static void Main(string[] args)
         {
             //Atrast kā ģenerēt random skaitļus (gadījuma skaitļus) diapazonā no 1 - 7. Un izvadīt pretī attiecīgo dienu. (tiek ģenerēts 5- izvadam piektdiena, 2- Otrdiena, utt)
+            again:
 
             Random rnd = new Random();
             int num = rnd.Next(1, 7);
             //String day = Convert.ToString(num);
             if (num == 1)
             {
-                Console.WriteLine("Sistēma saģenerēja skaitli " + num + " kas ir " + "Pirmdiena");
+                Console.WriteLine(Teksts1() + num + Teksts2() + "Pirmdiena");
             }
             else if (num == 2)
             {
-                Console.WriteLine("Sistēma saģenerēja skaitli " + num + " kas ir " + "Otrdiena");
+                Console.WriteLine(Teksts1() + num + Teksts2() + "Otrdiena");
             }
             else if (num == 3)
             {
-                Console.WriteLine("Sistēma saģenerēja skaitli " + num + " kas ir " + "Trešdiena");
+                Console.WriteLine(Teksts1() + num + Teksts2() + "Trešdiena");
             }
             else if (num == 4)
             {
-                Console.WriteLine("Sistēma saģenerēja skaitli " + num + " kas ir " + "Ceturtdiena");
+                Console.WriteLine(Teksts1() + num + Teksts2() + "Ceturtdiena");
             }
             else if (num == 5)
             {
-                Console.WriteLine("Sistēma saģenerēja skaitli " + num + " kas ir " + "Piektdiena");
+                Console.WriteLine(Teksts1() + num + Teksts2() + "Piektdiena");
             }
             else if (num == 6)
             {
-                Console.WriteLine("Sistēma saģenerēja skaitli " + num + " kas ir " + "Sestdiena");
+                Console.WriteLine(Teksts1() + num + Teksts2() + "Sestdiena");
             }
             else
             {
-                Console.WriteLine("Sistēma saģenerēja skaitli " + num + " kas ir " + "Svētdiena");
+                Console.WriteLine(Teksts1() + num + Teksts2() + "Svētdiena");
             }
-
+            
+            Console.WriteLine("Vai atkārtot uzdevumu? y vai n");
+            String input = Console.ReadLine();
+            if (input == "y")
+            {
+                goto again;
+            }
+            else
+            {
+                Console.WriteLine("Press Any Key to exit.");
+            }
+            static String Teksts1()
+            {
+                string t1 = "Sistēma saģenerēja skaitli ";
+                return t1;
+            }
+            static String Teksts2()
+            {
+                string t2 = " kas ir ";
+                return t2;
+            }
         }
     }
 }
