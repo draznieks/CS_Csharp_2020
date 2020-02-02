@@ -8,6 +8,7 @@ namespace _3_dienas_MD_3
         {
             //MD 3. Šajā uzdevumā humanoīdam jāievada skaitlis un sistēma pateiks vai tas ir pāra vai nepāra skaitlis
             //Jāizmanto  "mod" un "div" sintakses (% un /)
+            again:
             Console.WriteLine("Ievadi jebkādu skaitli un nospied ENTER");
             Console.WriteLine("Sistēma tev pateiks vai tas ir pāra vai nepāra skaitlis");
             String ievade = Console.ReadLine();
@@ -19,6 +20,16 @@ namespace _3_dienas_MD_3
             else
             {
                 Console.WriteLine("Ievadītais skaitlis " + num + " ir nepāra skaitlis");
+            }
+            Console.WriteLine("Vai atkārtot uzdevumu? y vai n");
+            String input = Console.ReadLine();
+            if (input == "y")
+            {
+                goto again;
+            }
+            else
+            {
+                Console.WriteLine("Press Any Key to exit.");
             }
         }
     }

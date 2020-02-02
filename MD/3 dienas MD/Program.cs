@@ -8,6 +8,7 @@ namespace _3_dienas_MD
         {
             //1.MD
             //Cilvēks ievada skaitli, izvadīt vai skaitlis ir pozitīvs/negatīvs vai nulle.
+            again:
             Console.WriteLine("Šajā uzdevumā tev jāievada skaitlis un jānospiež ENTER");
             Console.WriteLine("Pēc ENTER nospiešanas tev sistēma parādīs vai skaitlis ir pozitīvs, negatīvs vai nulle");
             int skaitlis = Convert.ToInt32(Console.ReadLine());
@@ -23,6 +24,16 @@ namespace _3_dienas_MD
             else
             {
                 Console.WriteLine("Tavs ievadītais skaitlis " + skaitlis + " ir nulle");
+            }
+            Console.WriteLine("Vai atkārtot uzdevumu? y vai n");
+            String input = Console.ReadLine();
+            if (input == "y")
+            {
+                goto again;
+            }
+            else
+            {
+                Console.WriteLine("Press Any Key to exit.");
             }
         }
     }
