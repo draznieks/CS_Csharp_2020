@@ -19,10 +19,10 @@ namespace _7_diena_MD_2_klases_aplis
             //Konstruktors
             this.r = r;
         }
-        public void getS()
+        public Aplis(double Laukums, double print)
         {
-            Laukums();
-            print();
+            this.Laukums = Laukums;
+            this.print = print;
         }
         private void Laukums()
         {
