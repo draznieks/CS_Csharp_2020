@@ -19,16 +19,10 @@ namespace _7_diena_MD_2_klases_aplis
             //Kam lielāks, tas uzvar
             //kā piefiksēt uzvaras - freestyle
             //apstājamies, kad viens objekts uzvarējis 3 reizes
-            int a = generate();
-            int b = generate();
-            Console.WriteLine(a);
-            Console.WriteLine(b);
 
-            int generate()
             {
-                Random random = new Random();
-                int number = random.Next(1, 10);
-                return number;
+                KamLielaks kamLielaks = new KamLielaks(1, 3);
+                kamLielaks.print();
             }
 
         }
