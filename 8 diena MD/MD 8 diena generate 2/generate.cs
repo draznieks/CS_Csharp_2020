@@ -7,12 +7,12 @@ namespace MD_8_diena_generate_2
     class generate
     {
         //private int a_;
-        public generate(int a)
+        /*public generate(int a)
         {
             //Konstruktors
-            a = gen();
             //this.a_ = a;
-        }
+            a = gen();
+        }*/
 
         public int gen()
         {

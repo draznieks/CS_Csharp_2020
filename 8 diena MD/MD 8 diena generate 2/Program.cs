@@ -15,11 +15,11 @@ namespace MD_8_diena_generate_2
             int Peteris = 0;
             int j = 0;
             int p = 0;
-            int g = 0;
+            //int g = 0;
             int uzvaras = 10;
             while (Janis < uzvaras && uzvaras > Peteris)
             {
-                generate a = new generate(g);
+                generate a = new generate();
                 j = a.gen();
                 p = a.gen();
                 Console.Write("Jānim " + j + " Pēterim " + p);
