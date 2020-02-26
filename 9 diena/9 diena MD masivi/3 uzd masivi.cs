@@ -20,7 +20,7 @@ namespace _9_diena_MD_masivi
                     Console.Write(b[i]);
                 }
                 Console.WriteLine("");
-                x = x + 2;
+                x += 2;
             }
         }
     }
